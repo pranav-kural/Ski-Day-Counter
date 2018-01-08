@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 
-import { SkiDayComponent } from "./components/SkiDayCount";
+import { SkiDayList } from "./components/SkiDayList";
 
 class App extends Component {
   render() {
@@ -10,10 +10,28 @@ class App extends Component {
         <header className="App-header">
           <h1 className="App-title">Welcome to React</h1>
         </header>
-          <SkiDayComponent total={50}
-                            powder={20}
-                            backcountry={10}
-                            goal={100} />
+          <SkiDayList days={
+            [
+              {
+                resort: "Squaw Valley",
+                date: new Date("1/2/2017"),
+                powder: true,
+                backcountry: false
+              },
+              {
+                resort: "Kirkwood",
+                date: new Date("2/28/2017"),
+                powder: false,
+                backcountry: false
+              },
+              {
+                resort: "Mt. Tallac",
+                date: new Date("4/2/2017"),
+                powder: false,
+                backcountry: true
+              }
+            ]
+          } />
       </div>
     );
   }
