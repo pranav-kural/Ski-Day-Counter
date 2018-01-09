@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 
 import { SkiDayList } from "./components/SkiDayList";
+import { SkiDayCount } from "./components/SkiDayCount";
 
 class App extends Component {
   render() {
@@ -10,7 +11,10 @@ class App extends Component {
         <header className="App-header">
           <h1 className="App-title">Welcome to React</h1>
         </header>
-          <SkiDayList days={
+
+          <SkiDayCount />
+
+          {/* <SkiDayList days={
             [
               {
                 resort: "Squaw Valley",
@@ -31,7 +35,7 @@ class App extends Component {
                 backcountry: true
               }
             ]
-          } />
+          } /> */}
       </div>
     );
   }

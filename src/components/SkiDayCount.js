@@ -5,7 +5,7 @@ import SnowFlake from 'react-icons/lib/ti/weather-snow'
 import Calendar from 'react-icons/lib/fa/calendar'
 
 // SkiDayComponent
-export class SkiDayComponent extends Component {
+export class SkiDayCount extends Component {
 
     percentToDecimal = (decimal) => ((decimal * 100) + "%")
 
@@ -37,7 +37,7 @@ export class SkiDayComponent extends Component {
     }
 }
 
-SkiDayComponent.defaultProps = {
+SkiDayCount.defaultProps = {
     total: 50,
     powder: 50,
     backcountry: 15,
