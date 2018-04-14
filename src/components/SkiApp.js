@@ -47,7 +47,8 @@ export class SkiApp extends Component {
             /> :
             (this.props.location.pathname === "/add-day") ?
             <AddDayForm /> :
-            <SkiDayList days={this.state.allSkiDays} /> 
+            <SkiDayList days={this.state.allSkiDays} 
+                        filter={this.props.match.params.filter} /> 
         }
 
 
