@@ -12,7 +12,7 @@ h1, label {
 }
 
 div.app {
-  background-image: url("http://localhost:3000/rowdy.jpg");
+  background-image: url("../assets/img/rowdy.jpg");
   background-size: cover;
   background-position: center;
 }
