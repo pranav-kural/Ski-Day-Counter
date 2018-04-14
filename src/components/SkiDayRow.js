@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types';
 import Terrain from 'react-icons/lib/md/terrain'
 import SnowFlakes from 'react-icons/lib/ti/weather-snow'
-import Calendar from 'react-icons/lib/fa/calendar'
 
 export const SkiDayRow = ({date, resort, powder, backcountry}) => (
 
