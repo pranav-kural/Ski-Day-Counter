@@ -11,7 +11,8 @@ class App extends Component {
       <Router>
         <Switch>
         <Route path="/" exact component={SkiApp} />
-        <Route path="/list-days" exact component={SkiApp} />
+        <Route path="/list-days" exact component={SkiApp}/>
+        <Route path="/list-days/:filter" component={SkiApp} />
         <Route path="/add-day" exact component={SkiApp} />
         <Route component={Whoops404} />
         </Switch>
