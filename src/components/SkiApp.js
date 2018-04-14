@@ -4,6 +4,9 @@ import { SkiDayCount } from "./SkiDayCount";
 import { AddDayForm } from "./AddDayForm";
 import { Menu } from "./Menu";
 
+import "../stylesheets/ui.css";
+import "../stylesheets/index.css";
+
 
 export class SkiApp extends Component {
 
